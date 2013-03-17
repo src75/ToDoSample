@@ -1,0 +1,42 @@
+﻿<use namespace="System.Collections.Generic"/>
+<viewdata model="ToDo.ToDo.ToDoViewModel" />
+<link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>  
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<h1>My To Do List</h1>
+<h4>Enter a description, deadline and click Submit</h4>
+<form action="/ToDo/Post" method="POST">
+    <if condition='Model.ToDoList.Count > 0'>
+        <div class="container">
+            <div class="col1head">Item ID</div>
+            <div class="col2head">Item Description</div>
+            <div class="col3head">Create Date</div>
+            <div class="col4head">Deadline Date</div>
+            <div class="container" each="var item in Model.ToDoList">
+                <div class="col1">${item.ToDoId}</div>
+                <div class="col2">${item.ToDoDescription}</div>
+                <div class="col3">${string.Format("{0:dddd, MMMM d, yyyy}", item.ToDoCreateDate)}</div>
+                <div class="col4">${string.Format("{0:dddd, MMMM d, yyyy}", item.ToDoDeadlineDate)}</div>
+            </div>
+        </div>
+    </if>
+    <br />
+    <div class="ToDoContainer">
+        <div class="ToDoCol1">
+            To Do Description:
+            <input type="text" name="NewToDoDescription" />
+        </div>
+        <div class="ToDoCol2">
+            To Do Deadline:
+            <input type="text" name="NewToDoDeadline" id="datepicker" />
+        </div>
+    </div>
+    <br />
+    <input id="search-button" type="submit" value="Add to List" />
+</form>
+<script>
+    $(function() {
+    $( "#datepicker" ).datepicker();
+    });
+</script>
+

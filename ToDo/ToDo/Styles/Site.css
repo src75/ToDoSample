@@ -1,0 +1,128 @@
+﻿body 
+{
+    text-align:center; 
+    background-color : #DCDCDC;
+    font-family: Arial;
+}
+
+.container
+{
+    width: 650px;
+    background-color: #FFFFFF;
+    clear: both;
+
+}
+.col1
+{
+    float: left;
+    width: 10%;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+.col2
+{
+    float: left;
+    width: 30%;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+        padding: 2px 2px 2px 2px;
+}
+.col3
+{
+    float: left;
+    width: 30%;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+.col4
+{
+    float: right;
+    width: 30%;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+
+.col1head
+{
+    float: left;
+    width: 10%;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+}
+.col2head
+{
+    float: left;
+    width: 30%;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 2px 2px 2px 2px;
+}
+.col3head
+{
+    float: left;
+    width: 30%;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+}
+.col4head
+{
+    float: right;
+    width: 30%;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+}
+
+.ToDoContainer
+{
+    width: 700px;
+    clear: both;
+}
+
+.ToDoCol1
+{
+    float: left;
+    width: 50%;
+    border: none;
+    text-align: left;
+}
+.ToDoCol2
+{
+    float: right;
+    width: 50%;
+    border: none;
+    text-align: left;
+}
+
+.ui-datepicker 
+{
+	width: 216px;
+	height: auto;
+	margin: 5px auto 0;
+	font: 9pt Arial, sans-serif;
+    background-color: #FFFAFA;
+    border: 1px solid #708090;
+}
+
+#ui-datepicker-div 
+{
+    display: none;
+}
+
+
+
+
